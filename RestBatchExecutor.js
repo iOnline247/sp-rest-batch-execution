@@ -91,7 +91,7 @@ var RestBatchExecutor = (function () {
 
     RestBatchExecutor.prototype.getRequestHeaders = function () {
         var header = {};
-        header['accept'] = 'application/json;odata=verbos';
+        header['accept'] = 'application/json;odata=verbose';
         header['content-type'] = 'multipart/mixed; boundary=batch_8890ae8a-f656-475b-a47b-d46e194fa574';
         header[Object.keys(this.authHeader)[0]] = this.authHeader[Object.keys(this.authHeader)[0]];
 
